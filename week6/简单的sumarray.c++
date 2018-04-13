@@ -3,15 +3,13 @@
     using namespace std;
     template <class T>
     T SumArray(T* a, T* b){
-//
-        T res=*a;
+        T res=*a;   //给返回值赋初值
         int gap=b-a;
-        for(int i=1;i<gap;i++)
+        for(int i=1;i<gap;i++)//赋初值，所以从1开始
         {
                 res+=*(a+i);
         }
      return res;
-//
     }
     int main() {
         string array[4] = { "Tom","Jack","Mary","John"};
